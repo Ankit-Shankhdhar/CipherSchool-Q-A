@@ -53,14 +53,14 @@
       <p><strong>nextElementSibling of #first:</strong> ${firstChild.nextElementSibling.id}</p>
     `;
 
-    // Visual highlighting
+    
     function flashElement(element, color = 'yellow') {
       const original = element.style.backgroundColor;
       element.style.backgroundColor = color;
       setTimeout(() => element.style.backgroundColor = original, 1000);
     }
 
-    // Click handlers to visualize relationships
+    
     document.querySelectorAll('#demo-area *').forEach(el => {
       el.onclick = function(e) {
         e.stopPropagation();
